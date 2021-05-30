@@ -1,0 +1,204 @@
+.sale {
+  max-width: 1920px;
+  margin: 5rem auto;
+}
+.sale .sale-content {
+  position: relative;
+  width: 1150px;
+  min-height: 826px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+/* COLOUMN 1 ---------- */
+.sale .sale-content .col {
+  width: 50%;
+  text-align: center;
+  margin: 1rem;
+}
+.sale .sale-text {
+  text-align: center;
+}
+.sale .sale-text p {
+  color: var(--main-color);
+  font-size: 62px;
+  text-align: center;
+  line-height: 3rem;
+  text-transform:capitalize;
+}
+.sale .sale-text h1 {
+  color: var(--main-color);
+  font-size: 62px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.sale .sale-content .sale-bottle {
+  width: 100%;
+}
+.sale .sale-content .sale-bottle img {
+  width: 350px;
+  height: 420px;
+  position: relative;
+  bottom: -3rem;
+}
+.sale .sale-shipping {
+  background-color: rgb(242,248, 237);
+  border-radius: 5px;
+  padding: 1rem;
+}
+.sale .sale-shipping .shipping-text h1 {
+  color: var(--main-color);
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.sale .sale-shipping .shipping-icons {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.sale .sale-shipping .shipping-icons .icon {
+  width: 30%;
+}
+.sale .sale-shipping .extra-text p {
+  color: #fff;
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 2rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-top: 1rem;
+}
+/* COLOUMN 2 ========== */
+.sale .sale-content .col .free {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+}
+.sale .sale-content .col .free img:nth-of-type(1) {
+  position: relative;
+  z-index: -1;
+}
+.sale .sale-content .col .free .b1g3 {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  right: 95px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  transform: rotate(25deg);
+}
+.sale .sale-content .col .free .b1g3 h1 {
+  width: 70%;
+  font-size: 45px;
+  line-height: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.sale .sale-content .col .free .b1g3 p {
+  width: 50%;
+  font-size: 15px;
+  color: var(--main-color);
+  padding: 5px 2px;
+  background-color: #fff;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  font-weight: 700;
+}
+.sale .sale-content .col .free img:nth-of-type(2) {
+  margin-top: -12rem;
+}
+.sale .sale-content .cart {
+  background-color: rgb(242,248, 237);
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: block;
+  margin-top: -4rem;
+}
+.sale .sale-content .cart h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: rgb(223, 245, 195);
+  color: var(--main-color);
+  border-radius: 8px;
+}
+.sale .sale-content .trust-icons {
+  margin-top: -1.5rem;
+}
+.sale .sale-content .cart img:nth-of-type(1) {
+  width: 195px;
+  height: 85px;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  object-fit: cover;
+}
+.sale .sale-content .cart img:nth-of-type(2) {
+  width: 320px;
+  height: 100px;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .sale .sale-content {
+    position: relative;
+    width: 100%;
+    min-height: 826px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sale .sale-content .col {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sale .sale-shipping .shipping-icons .icon img{
+    width: 70px;
+    height: 55px;
+    margin: 10px;
+  }
+  .sale .sale-content .col {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .sale .sale-content .col .free {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  
+  }
+  .sale .sale-content .col .free .b1g3 {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    right: 20px;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+}
+

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url('/assets/css/_hero.css');
+@import url('/assets/css/_about.css');
+@import url('/assets/css/_divider.css');
+@import url('/assets/css/_exp.css');
+@import url('/assets/css/_sale.css');
+
+:root {
+  /* ==== COLORS ====== */
+  --main-color: #095522;
+  --transparent-green: #052b12;
+  
+
+  --buy-btn-main: #F6B812;
+  --buy-btn-secondary: #DE8103;
+  --border: #A77A00;
+  --bg-color: #FBF8F9;
+
+
+
+
+  /* ==== FONT SIZE ===== */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Hind', sans-serif;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+.header {
+  min-height: 938px;
+  max-width: 1920px;
+  height: auto;
+  background: url(/assets/img/Hero2.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+}
+.navbar {
+  width:100%;
+  height: 135px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 46px rgba(0, 0, 0, 0.147645);
+border-radius: 1px;
+}
+nav {
+  width: 1150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-bar {
+  display: none;
+}
+.header .menu li {
+  margin-left: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header .menu li a {
+  color: var(--main-color);
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .header .navbar {
+    padding: 0 1.5rem;
+  }
+  .menu {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    left: -50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.5s;
+  }
+  .show {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+  }
+  .header .menu li {
+    margin: 2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .header .menu li:not(.buy-btn):hover {
+    background-color: var(--main-color);
+  }
+  .header .menu li a {
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  .header .menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  .header .menu-bar .line {
+    width: 40px;
+    height: 3px;
+    background-color: var(--main-color);
+    margin-bottom: 8px;
+  }
+
+}

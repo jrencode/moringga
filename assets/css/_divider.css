@@ -1,0 +1,15 @@
+/* .clear {
+  content: "";
+  clear: both;
+  display: table;
+  position: relative;
+}
+.moringga-bg {
+  position: relative;
+  margin: 0 auto;
+  width: 1920px;
+  min-height: 250px;
+  background: url(/assets/img/moringga-bg.png) repeat-x;
+  background-position: center;
+  z-index: -1;
+} */

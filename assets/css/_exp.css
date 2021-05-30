@@ -1,0 +1,120 @@
+.experience {
+  position: relative;
+  max-width: 1920px;
+  min-height: 826px;
+  margin: 0 auto;
+  background: rgb(9, 85, 34, 0.9)
+}
+.experience::before {
+  content: '';
+  position: absolute;
+  background: url(/assets/img/exp-bg.png) no-repeat;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-position: left center;
+  z-index: -1;
+}
+.experience::after {
+  content: '';
+  position: absolute;
+  background: url(/assets/img/exp-bg2.png) no-repeat;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-position: right center;
+  z-index: -1;
+}
+
+.exp-container {
+  min-height: 826px;
+  width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.experience .exp-container .exp-text {
+  color: #fff;
+}
+.experience .exp-container .exp-text h1 {
+  width: 100%;
+  font-size: 49px;
+  text-align:center;
+}
+.exp-container .exp-lists {
+  width: 100%;
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 3rem;
+}
+.exp-container .exp-lists .exp-list {
+  width: 33%;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 55px;
+}
+.exp-container .exp-lists .exp-list img {
+  width: 80px;
+  height: 80px;
+}
+.experience .exp-answer {
+  font-size: 49px;
+  color: #B2FF91;
+  width: 100%;
+  background-color: var(--transparent-green);
+  text-align: center;
+}
+.experience .exp-answer h2 {
+  font-size: 49px;
+  color: #B2FF91;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .exp-container {
+    min-height: 826px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .experience .exp-container .exp-text h1 {
+    text-align: center;
+    margin: 5rem 0;
+  }
+  .experience .exp-container .exp-lists {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .exp-container .exp-lists .exp-list {
+    width: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 55px;
+    margin: 0 auto;
+  }
+  .experience .exp-answer h2 {
+    font-size: 30px;
+    padding: 1rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+}
